@@ -17,7 +17,7 @@ const products = [
   ['Stainless Steel Cat Bowl', 'স্টেইনলেস স্টিল ক্যাট বোল', 290, 350, 'cat', 'accessories', 'Paws'],
   ['Interactive Feather Wand Toy', 'ইন্টারঅ্যাকটিভ ফেদার টয়', 250, 0, 'cat', 'toys', 'Paws'],
   ['Catnip Plush Mouse Set', 'ক্যাটনিপ মাউস টয় সেট', 330, 390, 'cat', 'toys', 'Paws'],
-  ['Cat Multivitamin Gel 100g', 'ক্যাট মাল্টিভিটামিন জেল', 540, 620, 'cat', 'medicine', 'Bioline'],
+  ['Cat Multivitamin Gel 100g', 'ক্যাট মাল্টিভিটামিন জেল', 540, 620, 'cat', 'supplements', 'Bioline'],
   ['Cat Deworming Tablet', 'ক্যাট ডিওয়ার্মিং ট্যাবলেট', 190, 0, 'cat', 'medicine', 'PetCare'],
   ['Bentonite Clumping Litter 10L', 'বেনটোনাইট ক্লাম্পিং লিটার', 740, 820, 'cat', 'litter', 'Paws'],
   ['Lavender Scented Cat Litter 5L', 'ল্যাভেন্ডার ক্যাট লিটার', 395, 0, 'cat', 'litter', 'Paws'],
@@ -29,7 +29,7 @@ const products = [
   ['Durable Dog Leash & Collar Set', 'ডগ লিশ এবং কলার সেট', 560, 640, 'dog', 'accessories', 'Paws'],
   ['Paw Print Dog Bed Medium', 'প-প্রিন্ট ডগ বেড', 1750, 1990, 'dog', 'accessories', 'Paws'],
   ['Squeaky Rubber Bone Toy', 'স্কুইকি রাবার বোন টয়', 280, 0, 'dog', 'toys', 'Paws'],
-  ['Dog Joint Care Supplement', 'ডগ জয়েন্ট কেয়ার সাপ্লিমেন্ট', 790, 0, 'dog', 'medicine', 'Himalaya'],
+  ['Dog Joint Care Supplement', 'ডগ জয়েন্ট কেয়ার সাপ্লিমেন্ট', 790, 0, 'dog', 'supplements', 'Himalaya'],
   ['Dog Tick & Flea Solution', 'ডগ টিক অ্যান্ড ফ্লি সল্যুশন', 450, 520, 'dog', 'medicine', 'Bioline'],
   ['Dog Grooming Brush', 'ডগ গ্রুমিং ব্রাশ', 320, 0, 'dog', 'grooming', 'Paws'],
   ['Premium Parrot Seed Mix 1kg', 'প্রিমিয়াম প্যারট সিড মিক্স', 390, 0, 'bird', 'food', 'Vitapol'],
@@ -57,9 +57,9 @@ const products = [
 }));
 
 const doctors = [
-  { name: 'ডা. রফিকুল ইসলাম', specialization: 'পশু চিকিৎসক', bio: 'বিড়াল ও কুকুরের সাধারণ রোগ ও পুষ্টি বিশেষজ্ঞ।', isActive: true, isOnline: true },
-  { name: 'ডা. সাদিয়া আক্তার', specialization: 'ভেটেরিনারি সার্জন', bio: 'জরুরি ও অস্ত্রোপচার সংক্রান্ত পরামর্শ।', isActive: true, isOnline: true },
-  { name: 'ডা. তানভীর হাসান', specialization: 'পাখি ও মাছ বিশেষজ্ঞ', bio: 'পাখি ও অ্যাকুয়ারিয়াম প্রাণীর যত্ন।', isActive: true, isOnline: false }
+  { name: 'ডা. রফিকুল ইসলাম', specialization: 'গবাদিপশু চিকিৎসক', bio: 'গরু ও ছাগলের সাধারণ রোগ, পুষ্টি ও উৎপাদনশীলতা বিষয়ে অভিজ্ঞ।', isActive: true, isOnline: true },
+  { name: 'ডা. সাদিয়া আক্তার', specialization: 'ভেটেরিনারি সার্জন', bio: 'গবাদিপশুর জরুরি অবস্থা ও অস্ত্রোপচার সংক্রান্ত প্রাথমিক পরামর্শে অভিজ্ঞ।', isActive: true, isOnline: true },
+  { name: 'ডা. তানভীর হাসান', specialization: 'পোল্ট্রি ও হাঁস বিশেষজ্ঞ', bio: 'মুরগি ও হাঁসের পরিচর্যা, পুষ্টি এবং সাধারণ রোগের বিষয়ে অভিজ্ঞ।', isActive: true, isOnline: false }
 ];
 
 try {
