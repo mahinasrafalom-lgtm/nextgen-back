@@ -7,7 +7,11 @@ export const env = {
     .filter(Boolean)
     .flatMap((origins) => origins.split(','))
     .map((origin) => origin.trim())
-    .filter(Boolean),
+    .filter(Boolean)
+    .map((origin) => {
+      if (!/^https?:\/\//i.test(origin)) origin = `https://${origin}`;
+      return origin.replace(/\/+$/, '');
+    }),
   isProduction: process.env.NODE_ENV === 'production'
 };
 
