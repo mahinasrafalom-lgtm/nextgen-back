@@ -1,4 +1,4 @@
-const requiredInProduction = ['MONGO_URI', 'JWT_SECRET', 'CLIENT_URL', 'ADMIN_URL'];
+const requiredInProduction = ['MONGO_URI', 'JWT_SECRET', 'CLIENT_URL'];
 
 export const env = {
   nodeEnv: process.env.NODE_ENV || 'development',
