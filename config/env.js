@@ -1,9 +1,10 @@
-const requiredInProduction = ['MONGO_URI', 'JWT_SECRET', 'CLIENT_URL'];
+const requiredInProduction = ['MONGO_URI', 'JWT_SECRET', 'CLIENT_URL', 'ADMIN_URL'];
 
 export const env = {
   nodeEnv: process.env.NODE_ENV || 'development',
   port: Number(process.env.PORT || 5000),
-  clientOrigins: [process.env.CLIENT_URL || 'http://localhost:5173', process.env.ADMIN_URL || 'http://localhost:5174']
+  clientOrigins: [process.env.CLIENT_URL, process.env.ADMIN_URL, ...(process.env.NODE_ENV !== 'production' ? ['http://localhost:5173', 'http://localhost:5174'] : [])]
+    .filter(Boolean)
     .flatMap((origins) => origins.split(','))
     .map((origin) => origin.trim())
     .filter(Boolean),
